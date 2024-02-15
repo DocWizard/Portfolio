@@ -93,6 +93,7 @@ p{
 .about-section {
     margin-top: 1em;
     padding: 1em;
+    padding-bottom: 2em;
     background-color: var(--secondary);
     color: var(--white);
   }
@@ -123,7 +124,9 @@ p{
     padding: 0 10px;
   }
 
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 .row:after {
     content: "";
     display: table;
@@ -140,7 +143,7 @@ p{
 
 #card1
 {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(./Resources/Img/Thumb1.PNG );
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(./Resources/Img/Thumbs/Thumb1.PNG );
     background-size: cover;  
     background-position: top center; 
 }
@@ -168,8 +171,8 @@ p{
 
 .card div
 {
-    text-align: center;
-    font-family: Roboto;
+  display:flex;   
+  font-family: Roboto;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.0);
     position: absolute;
@@ -178,7 +181,7 @@ p{
     width: 100%;
     height: 100%;
     margin: 0;
-    display:flex;
+    
 }
 
 .card div:hover
@@ -191,7 +194,9 @@ p{
 
 .card div p
 {
-    align-self:flex-end;
+  display:flex;  
+    align-items:center;
+    justify-content: center;
     width: 100%;
     margin: 5vw 1vw ;
 }
@@ -207,19 +212,28 @@ p{
     opacity:1;
 }
 
+
+@media screen and (min-width:1500px){
+  [class$="section"], .hero-image{
+      margin-left: 20vw;
+      margin-right: 20vw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-}
-
-@media screen and (min-width:1500px){
-    [class$="section"], .hero-image{
-        margin-left: 20vw;
-        margin-right: 20vw;
-    }
 }
 
 .contact-section
@@ -229,13 +243,27 @@ p{
     padding-bottom: 3em;
     background-color: var(--secondary);
     color: var(--white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center
 }
-.contact-section h1
-{
-    text-align:center;
-}
+
 .contact-section p{
     padding:0em 2em;
+}
+
+.contact-icons {
+  display:flex;
+  justify-content: space-around;
+}
+.contact-icons p {
+  display: block;
+  padding: 25px;
+  border-radius: 50%;
+  margin: 1em;
+  background: var(--white);
+  overflow:hidden;
 }
 
 .footer {

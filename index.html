@@ -2,20 +2,24 @@
 <html>
 <head>
      <meta charset="UTF-8">
-    <title>Page Title</title>
+    <title>Maciej Kitlasz - Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body> 
     <div class="hero-image">
         <div class="hero-text">
-          <h1 class="hover-1">I am John Doe</h1>
-          <p>And I'm a Photographer</p>
+          <h1 class="hover-1">My name is Maciej Kitlasz</h1>
+          <p>And this is my portfolio</p>
+          <p><small>(It's still under construction)</small></p>
+          <p><img src="./Resources/Img/ICONE_EN_CONSTRUCTION.GIF"></p>
         </div>
     </div> 
     <div class="about-section" id="about">
         <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo egestas varius. Nam varius arcu a odio dignissim feugiat. Praesent quis placerat sem, a auctor nisl. Nullam commodo id libero vitae facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer facilisis odio id hendrerit auctor. Fusce rutrum ligula in lacus gravida scelerisque. Suspendisse nunc massa, consectetur vitae euismod vitae, aliquet non ligula.</p>
+        <p>Hi! I am Maciej, an aspiring tech writer. With seven years of dedicated experience in the realm of public television, I am driven by an insatiable appetite for fresh challenges. My tenure in this dynamic field has honed my adeptness at performing exceptionally under immense time pressure, viewing deadlines as catalysts that energize my creative prowess.</p>
+        <p>In addition to my journalism background, I've ventured into the exciting domain of artificial intelligence. While I may not claim expertise, I find joy in experimenting with local language models and image generators. It's a fascinating journey of discovery, where every encounter with AI opens up new avenues of understanding and creativity. </p>
+        <p>Beyond the pixels and paragraphs, I'm a tech enthusiast at heart. Exploring the intersection of storytelling and technology has become my passion, and I am eager to share this journey with you through my portfolio.</p>
     </div>
     <div class="portfolio-section" id="portfolio">
         <h1>My work</h1>
@@ -24,7 +28,7 @@
                 <a href="https://docwizard.github.io/EdinburghGuide/Docs/Content/Home.htm">
                     <div class="card" id="card1">
                         <div>
-                          <p>MadCap Flare example project created during a Tech Writing postgraduate degree at Vistula University</p>
+                          <p>Example MadCap Flare project created while pursuing a Tech Writing postgraduate degree at Vistula University</p>
                       </div>
                  </div>
              </a>
@@ -33,7 +37,7 @@
                 <a href="example.html">
                     <div class="card" id="card2">
                      <div>
-                         <p>2</p>
+                         <p>Cute kitty placeholder</p>
                      </div>
                     </div>
                 </a>
@@ -42,7 +46,7 @@
                 <a href="example.html"> 
                     <div class="card" id="card3">
                         <div>
-                            <p>3</p>
+                            <p>Cute kitty placeholder</p>
                         </div>
                     </div>
                 </a>
@@ -51,7 +55,7 @@
                 <a href="example.html">
                     <div class="card" id="card4">
                         <div>
-                            <p>44</p>
+                            <p>Cute kitty placeholder</p>
                         </div>
                     </div>
                 </a>
@@ -60,11 +64,23 @@
     </div>
     <div class="contact-section" id="contact">
         <h1>Contact me</h1>
-        <p> Vestibulum eget gravida massa. Maecenas accumsan quam ac ultrices pulvinar. Quisque ut mi sed elit lacinia laoreet sit amet ullamcorper nisi. Sed euismod arcu orci, eget vestibulum turpis suscipit porttitor. Nam vitae placerat justo. Nulla facilisi. Aliquam at auctor ipsum, luctus bibendum urna. Nam nulla magna, cursus eleifend est quis, luctus lacinia nunc. Nunc quis magna scelerisque, finibus diam in, cursus velit. Integer vitae ex in magna ultricies lobortis. </p>
+        <p>Feel free to reach out to me. I'm always open to new opportunities and collaborations.</p>
+        <span class="contact-icons">
+        <p><a id="mlink"href="#"><img src="./Resources/Img/mailICON.png" width="75px"></img></a></p>
+        <p><a href="https://www.linkedin.com/in/maciej-kitlasz/"><img src="./Resources/Img/linkedICON.png" width="75px"></img></a></p>
+        </span>
+    
     </div>
 
     <div class="footer">
-        <p>Footer</p>
-      </div>
+        <footer><small>&copy; Copyright 2024, Maciej Kitlasz</small></footer>
+        <footer><small>Icons made by Freepik from www.flaticon.com</small></footer>
+    </div>
+    <script>
+        var me = "maciej";
+        var place = "kitlasz.eu";
+        var elink = document.getElementById("mlink");
+        elink.href = `mailto:${me}@${place}`;
+    </script>
 </body>
 </html> 
