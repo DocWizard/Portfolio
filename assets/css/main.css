@@ -1849,10 +1849,11 @@ input, select, textarea {
 			text-align: center;
 			line-height: 2.65em;
 			color: inherit;
+			font-size: 2.65em;
 		}
 
 			.icon.style2:before {
-				font-size: 1.1em;
+				font-size: 1.5em;
 			}
 
 			.icon.style2:hover {
@@ -3165,7 +3166,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 2em 0 1em 0 ;
 		background-color: #f6f6f6;
 	}
 
@@ -3201,7 +3202,7 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				margin-top: 1em;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
@@ -3228,7 +3229,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 5em 0 3em 0 ;
+				padding: 1em 0 0 0 ;
 			}
 
 				#footer > .inner section:nth-child(1) {
@@ -3260,7 +3261,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3em 0 1em 0 ;
+				padding: 1em 0 0 0 ;
 			}
 
 				#footer > .inner {
@@ -3294,7 +3295,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#footer > .inner .copyright {
-				margin-top: 3em;
+				margin-top: 1em;
 			}
 
 				#footer > .inner .copyright li {
