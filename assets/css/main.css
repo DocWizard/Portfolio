@@ -3328,3 +3328,9 @@ input, select, textarea {
 			}
 
 		}
+
+.tiles article > a .content {
+	background-color: #0000003d;
+	padding: 0.5em;
+  }
+  
